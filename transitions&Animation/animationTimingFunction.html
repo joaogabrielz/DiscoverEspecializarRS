@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>css animation</title>
+  <style>
+    div{
+      width: 100px;
+      height: 80px;
+      background-color: blueviolet;
+      color: white;
+      position: relative;
+
+      animation-name: example;
+      animation-duration: 2s;
+    }
+    .linear{
+      animation-timing-function: linear;
+    }
+    .ease{
+      animation-timing-function: ease;
+      background-color: rgb(88, 18, 153);
+    }
+    .ease-in{
+      animation-timing-function: ease-in;
+      background-color: rgb(55, 11, 95);
+    }
+    .ease-out{
+      animation-timing-function: ease-out;
+      background-color: rgb(32, 4, 58);
+    }
+    .ease-in-out{
+      animation-timing-function: ease-in-out;
+      background-color: rgb(12, 1, 22);
+    }
+    @keyframes example{
+      from{
+        left: 0;
+      }
+      to{
+        left: calc(100% - 100px);
+      }     
+    }
+
+  </style>
+</head>
+<body>
+  <div class="linear">linear</div>
+  <div class="ease">linear</div>
+  <div class="ease-in">linear</div>
+  <div class="ease-out">linear</div>
+  <div class="ease-in-out">linear</div>
+</body>
+</html>

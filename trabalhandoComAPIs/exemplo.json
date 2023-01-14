@@ -1,0 +1,20 @@
+{
+  "nome": "Joao",
+  "cidade": "Campo Grande",
+  "telefone": 9877734345,
+  "trabalhando": true,
+  "hobbies": [
+   {
+    "id": 1,
+    "hobbie": "Leitura"
+   },
+   {
+    "id": 2,
+    "hobbie": "Treinar"
+   },
+   {
+    "id": 3,
+    "hobbie": "Correr"
+   }
+  ]
+}

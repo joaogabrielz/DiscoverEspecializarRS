@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>css animation</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: rgb(153, 43, 226);
+      position: relative;
+      
+
+      animation-name: example2;
+      animation-duration: 2s;
+      animation-delay: 2s;
+
+      /* animation-fill-mode: forwards;  */
+      /* fica no objeto as propriedades do 'To' */
+
+      /* animation-fill-mode: backwards; */
+       /*fica com as propriedades do from ativos durante delay  */
+
+      animation-fill-mode: both;
+      /* ambos, durante delay fica prop from, e depois de acabar fica as props de to */
+    }
+    @keyframes example{
+      from{
+        left: 0;
+        background-color: cyan;
+      }
+      to{
+        left: calc(100% - 100px);
+      }     
+    }
+    @keyframes example2{
+      0%{
+        left: 0;
+        background-color: cyan;
+      }
+      50%{
+        left: 300px;
+        background-color: yellow;
+      }
+      100%{
+        left: calc(100% - 100px);
+      }     
+    }
+
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>
